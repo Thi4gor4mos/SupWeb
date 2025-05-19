@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <title>Suprimentos</title>
+  <!--<base href="/suprimentos/">-->
+  <link rel="stylesheet" href="./Suprimentos_files/styles.82672aa0b14aae0d49d4.css">
+  <style>
+    .container[_ngcontent-bjx-c85] {
+      height: 100vh;
+      max-width: 430px
+    }
+
+    .form[_ngcontent-bjx-c85] {
+      flex-grow: 1
+    }
+
+    .parent-container[_ngcontent-bjx-c85] {
+      overflow-x: hidden;
+      position: relative
+    }
+  </style>
+  <style>
+    .background[_ngcontent-bjx-c84] {
+      background-image: radial-gradient(circle at 50% 50%, #4fc7f1, #4fc7f1 41%, #2fa8ec 65%, #007ce6);
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw
+    }
+  </style>
+  <style>
+    .environment-label[_ngcontent-bjx-c70] {
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      transform: rotate(45deg);
+      padding: 7px 0;
+      position: absolute;
+      top: 55px;
+      right: -75px;
+      width: 300px;
+      background-color: #4c87ff;
+      color: #fff;
+      z-index: 99999
+    }
+  </style>
+  <style>
+  .cm{
+    background-color: rgba(75, 158, 93, 0.5);
+    color{opacity: 1;}
+  }
+   </style>
+   <style>
+      .af{
+    background-color: #9cdcdf;
+
+    color{opacity: 1;};
+    
+  }
+   </style>
+
+
+</head>
+
+<body>
+  
+
+  <div _ngcontent-bjx-c84="" class="background"></div> <!-- Laytou da tela -->
+  <div _ngcontent-bjx-c85="" class="container d-flex align-items-center"><!--Centralização da tela-->
+    <form _ngcontent-bjx-c85="" novalidate="" class="form ng-pristine ng-valid ng-touched">
+
+      <div _ngcontent-bjx-c85="" class="d-flex justify-content-center"><img _ngcontent-bjx-c85=""
+          src="./Suprimentos_files/logo.svg" alt="Logo" class="mb-5"></div> <!--Logo do Suprimentos -->
+
+      <body>
+      
+        <select id="selectRedirect" class="form-control mb-4 ">
+          
+          <option value="http://online.saovicente.sp.gov.br/suprimentos/" >São Vicente</option>
+          <option value="http://siapegov.pindamonhangaba.sp.gov.br/suprimentos/">Pinda</option>
+          <option value="http://pmaparecida.geosiap.net.br/suprimentos" >Aparecida</option>
+          <option value="http://pmarapei.hopto.org:8081/suprimentos" >Arapeí</option>
+          <option value="http://cmarapei.ddns.net/suprimentos" class="cm">CM Arapeí</option>
+          <option value="https://pmbiritibamirim.geosiap.net.br/suprimentos" >Biritiba Mirim</option>
+          <option value="https://pmcachoeirapaulista.geosiap.net.br/suprimentos/entrar" >Cachoeira Paulista</option>
+          <!--<option value="http://cmcpv.ddns.net:8081/suprimentos" class="cm">CM Cachoeira Paulista(Não usa supweb)</option>-->
+          <option value="http://pmcanas.ddns.net/suprimentos" >Canas</option>
+          <option value="http://cmcpv.ddns.net:8081/suprimentos" class="cm">CM Canas</option>
+          <option value="https://pmcruzeiro.geosiap.net.br/suprimentos/entrar" >Cruzeiro</option>
+          <option value="https://esccruzeiro.geosiap.net.br:8443/suprimentos/entrar" class="af">ESC - Cruzeiro - Tecsof</option>
+          <option value="https://saaecruzeiro.geosiap.net.br:8443/suprimentos/entrar" class="af">SAAE Cruzeiro</option>
+          <option value="http://portal.guararema.sp.gov.br/suprimentos/" >Guararema</option>
+          <option value="https://pmguaratingueta.geosiap.net.br/suprimentos/entrar" >Guaratinguetá</option>
+          <option value="https://pmibirite.geosiap.net.br/suprimentos/entrar" >Ibirité</option>
+          <option value="https://pmitamonte.geosiap.net.br/suprimentos/" >Itamonte</option>
+          <option value="https://suprimentos-web.jacarei.sp.gov.br/entrar" >Jacareí</option>
+          <option value="http://ipjacarei.geosiap.net.br/suprimentos" class="af">IPMJ - Jacareí</option>
+          <option value="https://siap.lorena.sp.gov.br/suprimentos/" >lorena</option>
+          <option value="http://pmpedrotoledo.geosiap.net.br/suprimentos" >Pedro de Toledo</option>
+          <option value="http://cmpedrotoledo.geosiap.net.br:8081/suprimentos/entrar" class="cm">CM Pedro de Toledo</option>
+          <option value="https://siap.pompeia.sp.gov.br/suprimentos/entrar" >Pompéia</option>
+          <option value="https://pmqueluz.geosiap.net.br/suprimentos/entrar" >Queluz</option>
+          <option value="https://pmroseira.geosiap.net.br:8443/suprimentos" >Roseira</option>
+          <option value="https://pmsalesopolis.geosiap.net.br/suprimentos/" >Salesópolis</option>
+          <option value="http://cmsalesopolis.geosiap.net.br/suprimentos" class="cm">CM Salesópolis</option>
+          <option value="https://geosiap.santos.sp.gov.br/suprimentos/entrar" >Santos</option>
+          <option value="https://pmsantabranca.geosiap.net.br/suprimentos/entrar" >Santa Branca</option>
+          <option value="http://pmsilveiras.geosiap.net.br:8080/suprimentos/entrar" >Silveiras</option>
+          <option value="https://pmnilopolis.geosiap.net.br/suprimentos/" >Nilopolis</option>         
+          <option value="https://pmnovaiguacu.geosiap.net.br:8443/suprimentos" >Nova Iguaçu</option>
+          <option value="http://siapegov.japeri.rj.gov.br/suprimentos" >japerí</option>
+          <option value="https://pmcaraguatatuba.geosiap.net.br/suprimentos/entrar" >Caraguatatuba</option>
+          <option value="https://pmbarradopirai.geosiap.net.br/suprimentos/entrar" >Barra do Piraí</option>
+          <option value="https://pmredencao.geosiap.net.br/suprimentos" >Redenção da Serra</option>
+          <option value="https://suprimentos.pmsg.rj.gov.br/entrar" >São Gonçalo</option>
+          <option value="https://pmbananal.geosiap.net.br/suprimentos/entrar" >Bananal</option>
+          <option value="https://pmmangaratiba.geosiap.net.br/suprimentos/entrar" >Mangaratiba</option>
+          <option value="http://fcbss.ddns.net:8078/suprimentos/entrar" class="af">Fundação Cultural Paraibuna</option>
+          <option label="-----------------------------------Câmara Municipal---------------------------------"  style="font-size: medium;"></option>
+          <option value="https://siap.camaraarturnogueira.sp.gov.br/suprimentos" class="cm">CM Artur Nogueira</option>          
+          <option value="http://cmbaependi.geosiap.net.br:8084/suprimentos" class="cm">CM Baependi - MG</option>
+          <option value="https://cmcambuquira.geosiap.net.br:8443/suprimentos/entrar" class="cm">CM Cambuquira - MG</option>
+          <option value="http://camaracananeia.ddns.net/suprimentos" class="cm">CM Cananéia</option>
+          <option value="https://cmcaxambu.geosiap.net.br:8443/suprimentos" class="cm">CM Caxambu - MG</option>
+          <option value="https://cmcunha.geosiap.net.br/suprimentos" class="cm">CM Cunha</option>
+          <option value="https://cmguaruja.geosiap.net.br/suprimentos/entrar" class="cm">CM Guarujá</option>
+          <option value="https://cmlambari.geosiap.net.br:8091/suprimentos/entrar" class="cm">CM Lambari</option>
+          <option value="https://cmlavrinhas.geosiap.net.br/suprimentos/" class="cm">CM Lavrinha</option>
+          <option value="https://cmmarilia.geosiap.net.br/suprimentos/428" class="cm">CM Marilia</option>
+          <option value="http://cmnazarepaulista.ddns.net:8181/suprimentos/entrar" class="cm">CM Nazaré Paulista</option>
+          <option value="http://www.cmparaibuna.geosiap.net.br:8080/suprimentos/entrar" class="cm">CM Paraibuna</option>
+          <option value="https://portal.camarasjc.sp.gov.br/suprimentos/entrar" class="cm">CM São José dos Campos</option>
+          <option value="https://cmsaosebastiao.geosiap.net.br/suprimentos/entrar" class="cm">CM São Sebastião</option>
+
+         
+        </select>
+
+
+        <button onclick="redirect()" class="btn btn-secondary btn-block text-uppercase">Entrar</button>
+        <script>
+          function redirect() {
+            var selectElement = document.getElementById("selectRedirect");
+            var selectedValue = selectElement.value;
+            if (selectedValue) {
+              window.open(selectedValue, "_blank");
+            } else {
+              alert("Por favor, selecione um município");
+            }
+          }
+
+
+
+        </script>
+
+
+
+
+
+  </div>
+  </div>
+
+</body>
+
+</html>
